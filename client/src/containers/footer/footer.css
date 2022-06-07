@@ -1,0 +1,111 @@
+.gpt3__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-footer);
+}
+
+.gpt3__footer-heading {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 3rem;
+}
+
+.gpt3__footer-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.gpt3__footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border: 1px solid #fff;
+    text-align: center;
+
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.gpt3__footer-btn p {
+    font-size: 28px;
+    font-family: var(--font-family);
+    line-height: 28px;
+    color: #fff;
+    word-spacing: 2px;
+}
+.gpt3__footer-copyright {
+    margin-top: 0rem;
+    text-align: center;
+    width: 100%;
+}
+.gpt3__footer-copyright p {
+    font-size: 12px;
+    font-family: var(--font-family);
+    line-height: 15px;
+    color: #fff;
+}
+.gpt3__footer-btn{
+    position: relative;
+}
+.gpt3__footer-btn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: 0.2s all ease-in-out;
+}
+.gpt3__footer-btn:hover::after{
+    width: 100%;
+}
+.gpt3__footer-btn:hover > button{
+    color: black;
+}
+.gpt3__footer-btn button{
+    border:none;
+    outline:none;
+    background:none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    z-index: 99;
+}
+@media screen and (max-width: 850px) {
+    .gpt3__footer-heading h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__footer-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .gpt3__footer-links div {
+        margin: 1rem 0;
+    }
+
+    .gpt3__footer-btn p {
+        font-size: 28px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gpt3__footer-heading h1 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+}
